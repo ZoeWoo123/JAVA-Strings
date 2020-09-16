@@ -8,9 +8,7 @@ public class Vowels {
 	public Vowels() {
 		Scanner myObj = new Scanner(System.in);
 		System.out.println("Please input a sentence:");
-		
 		String userInput = myObj.nextLine();
-		myObj.close();
 		this.userInput = userInput;
 	}
 	
