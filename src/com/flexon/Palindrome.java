@@ -21,19 +21,6 @@ public class Palindrome {
 	public void setUserInput(String newInput) {
 		this.userInput = newInput;
 	}
-	public String Reverse(String str) {
-		char[] inputArray = str.toCharArray();
-		int l = 0;
-		int r = inputArray.length - 1;
-		while(l < r) {
-			char temp = inputArray[l];
-			inputArray[l] = inputArray[r];
-			inputArray[r] = temp;
-			l++;
-			r--;
-		}
-		return String.valueOf(inputArray);
-	}
 	
 	public boolean isPalindrome(String str) {
 		char[] inputArray = str.toCharArray();
@@ -60,7 +47,7 @@ public class Palindrome {
 	
 	public void ReverseAndCheckPalindrom() {
 		String target = this.userInput.trim().toLowerCase();
-		String reversed = Reverse(target);
+		String reversed = new StringBuilder(target).reverse().toString();
 		
 		if(this.userInput.charAt(0) >= 'A' && this.userInput.charAt(0) <= 'Z')
 			reversed = reversed.substring(0,1).toUpperCase() + reversed.substring(1);
