@@ -27,12 +27,23 @@ public class StringApp {
 		//////////Test Words////////////
 		////test Input////
 		System.out.println("");
-		System.out.println("///////Start test Vowels////////");
+		System.out.println("///////Start test Words////////");
 		Words testWords = new Words("I'm fine thank you!");
 		testWords.countWords();
 		////User Input////
 		Words testWords1 = new Words();
 		testWords1.countWords();
+		
+		
+		//////////Test Consonants////////////
+		////test Input////
+		System.out.println("");
+		System.out.println("///////Start test Consonants////////");
+		Consonants testConsonants = new Consonants("Are you ok?");
+		testConsonants.countConsonants();
+		////User Input////
+		Consonants testConsonants1 = new Consonants();
+		testConsonants1.countConsonants();
 	}
 
 }
