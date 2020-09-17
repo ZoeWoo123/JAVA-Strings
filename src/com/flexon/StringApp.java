@@ -18,7 +18,7 @@ public class StringApp {
 		////test Input////
 		System.out.println("");
 		System.out.println("///////Start test Palindrome///////");
-		Palindrome testPalindrome = new Palindrome("Alllmllla");
+		Palindrome testPalindrome = new Palindrome("Was it a car or a cat I saw?");
 		testPalindrome.ReverseAndCheckPalindrom();
 		////User Input////
 		Palindrome testPalindrome1 = new Palindrome();
