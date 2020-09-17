@@ -60,17 +60,11 @@ public class Palindrome {
 	
 	public void ReverseAndCheckPalindrom() {
 		String target = this.userInput.trim().toLowerCase();
-		char last = ' ';
-		int len = target.length()-1;
-		if(target.charAt(len) < 'A' || target.charAt(len) > 'Z' && target.charAt(len) < 'a' || target.charAt(len) > 'z') {
-			last = target.charAt(len);
-			target = target.substring(0,len);
-		}
 		String reversed = Reverse(target);
 		
 		if(this.userInput.charAt(0) >= 'A' && this.userInput.charAt(0) <= 'Z')
 			reversed = reversed.substring(0,1).toUpperCase() + reversed.substring(1);
-		reversed += last;
+		
 		System.out.println("Origin: " + this.userInput);
 		System.out.println("Reversed: " + reversed);
 		if(isPalindrome(target))
