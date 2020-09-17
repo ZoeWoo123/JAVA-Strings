@@ -34,7 +34,6 @@ public class StringApp {
 		Words testWords1 = new Words();
 		testWords1.countWords();
 		
-		
 		//////////Test Consonants////////////
 		////test Input////
 		System.out.println("");
@@ -44,6 +43,16 @@ public class StringApp {
 		////User Input////
 		Consonants testConsonants1 = new Consonants();
 		testConsonants1.countConsonants();
+		
+		//////////Test LastLetterCount////////////
+		////test Input////
+		System.out.println("");
+		System.out.println("///////Start test LastLetterCount////////");
+		LastLetterCount testLastLetterCount = new LastLetterCount("This is why.");
+		testLastLetterCount.countAndSwitch();
+		////User Input////
+		LastLetterCount testLastLetterCount1 = new LastLetterCount();
+		testLastLetterCount1.countAndSwitch();
 	}
 
 }
