@@ -23,7 +23,7 @@ public class Words {
 	
 	public int countWords() {
 		String target = this.userInput.trim();
-		String[] temp = target.split("[^(A-Z)(a-z)]+");
+		String[] temp = target.split("[^-A-Za-z]+");
 		int count = 0;
 		for(String s:temp) {
 			if(s != null && s.length() > 0) {
