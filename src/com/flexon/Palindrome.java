@@ -1,4 +1,4 @@
-package com.flexon;
+package com.flexon.app;
 
 import java.util.Scanner;
 
@@ -45,10 +45,12 @@ public class Palindrome {
 		return this.isPalindrom;
 	}
 	
-	public void ReverseAndCheckPalindrom() {
+	public boolean ReverseAndCheckPalindrom() {
 		String target = this.userInput.trim().toLowerCase();
 		String reversed = new StringBuilder(target).reverse().toString();
-		
+		if(reversed.length() == 0) {
+			return true;
+		}
 		if(this.userInput.charAt(0) >= 'A' && this.userInput.charAt(0) <= 'Z')
 			reversed = reversed.substring(0,1).toUpperCase() + reversed.substring(1);
 		
@@ -58,5 +60,6 @@ public class Palindrome {
 			System.out.println("It is palindrome.");
 		else
 			System.out.println("It is not palindrome.");
+		return this.isPalindrom;
 	}
 }
